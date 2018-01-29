@@ -1,7 +1,9 @@
 {
   "index.html": {
     "refer": [
-      "plus/geolocation.html"
-    ]
+      "plus/geolocation.html",
+      "plus/grid9.html"
+    ],
+    "resources": []
   }
 }
