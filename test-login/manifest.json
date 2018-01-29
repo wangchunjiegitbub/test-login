@@ -199,6 +199,13 @@
 					"plus/grid9.html"
 				],
 				"priority": 0
+			},
+			"plus/grid9.html": {
+				"resources": [],
+				"refer": [
+					"plus/geolocation.html"
+				],
+				"priority": 0
 			}
 		},
 		"idle": {
