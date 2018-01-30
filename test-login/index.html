@@ -45,7 +45,7 @@
 					
 					//自动登陆
 					if(state.token) {
-						console.log("token11");
+						console.log(state.token);
 						// 显示一个等待的对话框
 						var wd = plus.nativeUI.showWaiting();
 						// 构造要传递的json数据  
@@ -75,21 +75,7 @@
 									});		
 								}
 
-																
 								
-
-								// 保存token，以便于下次自动登录  
-								localStorage.setItem("TOKEN_USER", mui('#username')[0].value);
-								localStorage.setItem("TOKEN_LOGIN", data.token);
-								// 清空用户名，密码  
-								mui('#username')[0].value = "";
-								mui('#userpassword')[0].value = "";
-								// 打开下一个画面  
-								mui.openWindow({
-									url: '/plus/grid9.html',
-									id: 'grid9',
-								});
-
 							},
 							wd //传递给postData的最后一个参数，失败的时候关闭等待对话框  
 						);
