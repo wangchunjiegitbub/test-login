@@ -57,12 +57,13 @@
 							"token": state.token,
 							"userName": mui('#username')[0].value,
 							"userPassword": md5(mui('#userpassword')[0].value),
-							"uuid": plus.device.uuid
+							
 
 						};
 						// 调用ajax  
-						postData("http://192.168.1.104:8080/ddzy/applogin", //服务端的URL  
-							data, // json 数据  
+						console.log("123")
+						postData("http://192.168.3.216:8084/dmh/appLogin", //服务端的URL  
+							data, // json 数据
 							function(data) {
 								wd.close(); // 调用成功，先关闭等待的对话框  
 								if(data.result != "tokenOK") {
@@ -94,7 +95,7 @@
 					"uuid": plus.device.uuid
 				};
 				// 调用ajax  
-				postData("http://192.168.1.104:8080/ddzy/applogin", //服务端的URL  
+				postData("http://192.168.3.216:8084/dmh/appLogin", //服务端的URL  
 					data, // json 数据  
 					function(data) {
 						wd.close(); // 调用成功，先关闭等待的对话框  
