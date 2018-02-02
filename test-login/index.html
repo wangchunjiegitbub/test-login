@@ -55,8 +55,8 @@
 
 							"uuid": plus.device.uuid,
 							"token": state.token,
-							"userName": mui('#username')[0].value,
-							"userPassword": md5(mui('#userpassword')[0].value),
+							"wageNumber": mui('#username')[0].value,
+							"password": md5(mui('#userpassword')[0].value),
 							
 
 						};
@@ -90,8 +90,8 @@
 				// mui 是一个通过 id 取得对象的方法，  
 				// 内容就是 return document.getElementById();  
 				var data = {
-					"userName": mui('#username')[0].value,
-					"userPassword": md5(mui('#userpassword')[0].value),
+					"wageNumber": mui('#username')[0].value,
+					"password": md5(mui('#userpassword')[0].value),
 					"uuid": plus.device.uuid
 				};
 				// 调用ajax  
