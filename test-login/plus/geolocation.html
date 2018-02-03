@@ -56,16 +56,17 @@
 
 						};
 						// 调用ajax  
-						postData("http://192.168.3.216:8084/dmh/getCurrentPosition", //work-服务端的URL  
-//						postData("http://192.168.1.104:8080/dmh/getCurrentPosition", //home-服务端的URL
+//						postData("http://192.168.3.216:8084/dmh/getCurrentPosition", //work-服务端的URL  
+						postData("http://192.168.1.104:8080/dmh/getCurrentPosition", //home-服务端的URL
 							data, // json 数据  
 							function(data) {
 								wd.close(); // 调用成功，先关闭等待的对话框  
 								if(data.result != "1") {
-									//不能自动登陆
+									str += "信息：" + data.message + "\n";
+									outLine(str);
 									return;
 								} else {
-									str += "海拔精确度：" + data.result + "\n";
+									str += "信息：" + data.message + "\n";
 									outLine(str);
 								}
 
