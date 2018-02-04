@@ -197,15 +197,14 @@
 				"refer": [
 					"plus/geolocation.html",
 					"plus/grid9.html"
-
 				],
 				"priority": 0
 			},
 			"plus/grid9.html": {
 				"resources": [],
 				"refer": [
-					"plus/geolocation.html"
-
+					"plus/geolocation.html",
+					"plus/list-to-detail/listview.html"
 				],
 				"priority": 0
 			}

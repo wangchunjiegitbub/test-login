@@ -1,12 +1,15 @@
 {
-	"index.html": {
-		"refer": [
-			"plus/grid9.html"
-		]
-	},
-	"plus/grid9.html": {
-		"refer": [
-			"plus/geolocation.html"
-		]
-	}
+  "index.html": {
+    "refer": [
+      "plus/grid9.html"
+    ],
+    "resources": []
+  },
+  "plus/grid9.html": {
+    "refer": [
+      "plus/geolocation.html",
+      "plus/list-to-detail/listview.html"
+    ],
+    "resources": []
+  }
 }

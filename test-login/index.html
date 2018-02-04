@@ -18,7 +18,7 @@
 
 	<body>
 		<div class="mui-bar mui-bar-tab" style="height:20px;line-height:20px;font-size:10px;text-align:center;">
-			这是底部信息123444
+			欢迎使用！
 		</div>
 		<div class="mui-content-padded" style="margin: 5px;">
 			<form class="mui-input-group">
@@ -62,8 +62,8 @@
 						};
 						// 调用ajax  
 						console.log("123")
-						postData("http://192.168.1.104:8080/dmh/appLogin", //服务端的URL
-//						postData("http://192.168.3.216:8084/dmh/appLogin", //服务端的URL
+//						postData("http://192.168.1.104:8080/dmh/appLogin", //服务端的URL
+						postData("http://192.168.3.120:8084/dmh/appLogin", //服务端的URL
 							data, // json 数据
 							function(data) {
 								wd.close(); // 调用成功，先关闭等待的对话框  
@@ -96,8 +96,8 @@
 					"uuid": plus.device.uuid
 				};
 				// 调用ajax  
-				postData("http://192.168.1.104:8080/dmh/appLogin", //服务端的URL
-//				postData("http://192.168.3.216:8084/dmh/appLogin", //服务端的URL
+//				postData("http://192.168.1.104:8080/dmh/appLogin", //服务端的URL
+				postData("http://192.168.3.120:8084/dmh/appLogin", //服务端的URL
 					data, // json 数据  
 					function(data) {
 						wd.close(); // 调用成功，先关闭等待的对话框  
