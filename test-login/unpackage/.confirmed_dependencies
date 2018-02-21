@@ -1,12 +1,39 @@
 {
-	"index.html": {
-		"refer": [
-			"plus/grid9.html"
-		]
-	},
-	"plus/grid9.html": {
-		"refer": [
-			"plus/geolocation.html"
-		]
-	}
+  "index.html": {
+    "refer": [
+      "plus/grid9.html"
+    ],
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/update.js",
+      "js/md5.js",
+      "js/mui.js",
+      "css/mui.css",
+      "css/common.css",
+      "js/common.js"
+    ]
+  },
+  "plus/grid9.html": {
+    "refer": [
+      "plus/geolocation.html"
+    ],
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ]
+  },
+  "plus/geolocation.html": {
+    "href": "plus/geolocation.html",
+    "resources": [
+      "js/immersed.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/common.js",
+      "css/common.css"
+    ],
+    "refer": [],
+    "priority": 0
+  }
 }

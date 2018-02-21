@@ -3,7 +3,7 @@
 	"id": "H5F501F2E",/*应用的标识，创建应用时自动生成，勿手动修改*/
 	"name": "test-login",/*应用名称，程序桌面图标名称*/
 	"version": {
-		"name": "1.0.0",/*应用版本名称*/
+		"name": "1.0.1",/*应用版本名称*/
 		"code": "83"
 	},
 	"description": "",/*应用描述信息*/
@@ -188,31 +188,35 @@
 					"xxhdpi": ""
 				}
 			}
-		}
+		},"ads":{"rp":false,"splash":false,"push":false,"spot":false},"adid":""
 	},
 	"dependencies": {
 		"pages": {
 			"index.html": {
-				"resources": [],
+				"resources": [
+					"js/app.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/update.js",
+					"js/md5.js"
+				],
 				"refer": [
 					"plus/geolocation.html",
 					"plus/grid9.html"
-
 				],
 				"priority": 0
 			},
 			"plus/grid9.html": {
 				"resources": [],
 				"refer": [
-					"plus/geolocation.html"
-
+					"plus/geolocation.html",
+					"plus/list-to-detail/listview.html"
 				],
 				"priority": 0
 			}
 		},
 		"idle": {
 			"resources": [
-				"js/app.js",
 				"fonts/mui.ttf",
 				"js/update.json",
 				"css/mui.css",
@@ -220,12 +224,8 @@
 				"main.html",
 				"js/common.js",
 				"css/common.css",
-				"js/mui.min.js",
-				"css/mui.min.css",
-				"js/update.js",
 				"js/mui.js",
-				"js/shortcut.js",
-				"js/md5.js"
+				"js/shortcut.js"
 			]
 		}
 	}
